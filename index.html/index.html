@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -18,4 +18,78 @@
 <ul>
 <li>Hobbies: Drawing, writing made-up stories</li>
   <li>Interests: Running, biking around the neighborhood </li>
-</ul>
+</ul> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishi's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Hello! I'm Rishi, a high school student passionate about iOS development. Here you'll find my projects and contact information.</p>
+  </section>
+  
+  <section id="projects">
+    <h2>My iOS Projects</h2>
+    
+    <!-- Image Slider -->
+    <div class="slider">
+      <div class="slides">
+        <img src="project1.jpg" alt="Project 1">
+        <img src="project2.jpg" alt="Project 2">
+        <img src="project3.jpg" alt="Project 3">
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:rishi.arun@vhhscougars.org">rishi.arun@vhhscougars.org</a></p>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 Rishi Arun</p>
+  </footer>
+  
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.querySelectorAll('.slides img');
+      slides.forEach((slide, index) => {
+        slide.style.display = (index === slideIndex) ? 'block' : 'none';
+      });
+    }
+
+    function nextSlide() {
+      slideIndex = (slideIndex + 1) % document.querySelectorAll('.slides img').length;
+      showSlides();
+    }
+
+    function prevSlide() {
+      slideIndex = (slideIndex - 1 + document.querySelectorAll('.slides img').length) % document.querySelectorAll('.slides img').length;
+      showSlides();
+    }
+  </script>
+</body>
+</html>
