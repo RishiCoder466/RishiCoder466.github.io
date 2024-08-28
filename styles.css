@@ -1,41 +1,18 @@
-/* Add some basic styling for the slider */
-.slider {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
+/* General styles for body and header */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.slides img {
-  max-width: 100%;
-  height: auto;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+header {
+  background-color: #f4f4f4; /* Light background for header */
+  padding: 10px 0;
 }
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #f4f4f4; /* Light background color for navigation */
+  text-align: center;
 }
 nav ul li {
   display: inline;
@@ -50,12 +27,10 @@ nav ul li a:hover {
   color: #007bff; /* Color change on hover */
 }
 
-/* Adding colors to the footer */
-footer {
-  background-color: #007bff; /* Blue background color for footer */
-  color: white;
+/* About section styling */
+#about {
+  padding: 20px;
   text-align: center;
-  padding: 10px 0;
 }
 
 /* Audio player styling */
@@ -65,4 +40,18 @@ audio {
   max-width: 100%;
   border: 2px solid #007bff; /* Blue border for audio player */
   border-radius: 5px; /* Rounded corners */
+}
+
+/* Contact section styling */
+#contact {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  background-color: #007bff; /* Blue background color for footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
