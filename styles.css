@@ -1,101 +1,45 @@
-/* Base Styles */
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
-
-/* Header */
-header {
-  background-color: #000;
-  color: #fff;
-  padding: 15px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Sections */
-section {
-  padding: 20px;
-  background-color: #fff;
-  margin-bottom: 10px;
-}
-
-section h1, section h2 {
-  color: #333;
-}
-
-#about {
-  background-color: #ffdddd; /* Light Red */
-}
-
-#projects {
-  background-color: #d4edda; /* Light Green */
-}
-
-#contact {
-  background-color: #d1ecf1; /* Light Blue */
-}
-
-/* Slider */
+/* Add some basic styling for the slider */
 .slider {
   position: relative;
   max-width: 600px;
   margin: auto;
   overflow: hidden;
 }
-
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 .slides img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
-
-button {
+.prev, .next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  background-color: rgba(0,0,0,0.5);
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
   color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+  font-weight: bold;
   font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-
-.prev {
-  left: 0;
-}
-
 .next {
   right: 0;
+  border-radius: 3px 0 0 3px;
 }
-
-button:hover {
-  background-color: rgba(0,0,0,0.8);
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
-/* Footer */
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-top: 10px;
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
 }
