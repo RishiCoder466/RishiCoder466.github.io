@@ -25,6 +25,7 @@
   font-size: 18px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
 .next {
   right: 0;
@@ -34,6 +35,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  background-color: #f4f4f4; /* Light background color for navigation */
 }
 nav ul li {
   display: inline;
@@ -41,5 +43,21 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: #333; /* Dark color for better visibility */
+  padding: 10px;
 }
+nav ul li a:hover {
+  color: #007bff; /* Color change on hover */
+}
+
+/* Adding colors to the footer */
+footer {
+  background-color: #007bff; /* Blue background color for footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Audio player styling */
+audio {
+  d
