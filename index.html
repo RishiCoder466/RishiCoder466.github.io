@@ -5,47 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rishi's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Add some basic styling for the slider */
-    .slider {
-      position: relative;
-      max-width: 600px;
-      margin: auto;
-      overflow: hidden;
-    }
-    .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-    .slides img {
-      max-width: 100%;
-      height: auto;
-    }
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -56,51 +21,6 @@
     <p>Hello! I'm Rishi, a high school student showcasing my iOS apps. My hobbies are drawing and biking around the neighborhood. Here you'll find my projects and contact information.</p>
   </section>
   
-  <section id="projects">
-    <h2>My iOS Projects</h2>
-    
-    <!-- Image Slider -->
-    <div class="slider">
-      <div class="slides">
-        <img src="project1.jpg" alt="Project 1">
-        <img src="project2.jpg" alt="Project 2">
-        <img src="project3.jpg" alt="Project 3">
-      </div>
-      <button class="prev" onclick="prevSlide()">&#10094;</button>
-      <button class="next" onclick="nextSlide()">&#10095;</button>
-    </div>
-  </section>
-  
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:rishi.arun@vhhscougars.org">rishi.arun@vhhscougars.org</a></p>
-  </section>
-  
-  <footer>
-    <p>&copy; 2024 Rishi Arun</p>
-  </footer>
-  
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let slides = document.querySelector('.slides');
-      let images = document.querySelectorAll('.slides img');
-      slides.style.transform = `translateX(${-slideIndex * 100}%)`;
-    }
-
-    function nextSlide() {
-      let images = document.querySelectorAll('.slides img');
-      slideIndex = (slideIndex + 1) % images.length;
-      showSlides();
-    }
-
-    function prevSlide() {
-      let images = document.querySelectorAll('.slides img');
-      slideIndex = (slideIndex - 1 + images.length) % images.length;
-      showSlides();
-    }
-  </script>
-</body>
-</html>
+   
