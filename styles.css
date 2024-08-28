@@ -32,6 +32,12 @@ nav ul li a:hover {
   padding: 20px;
   text-align: center;
 }
+.profile-pic {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  border-radius: 50%; /* Circular profile picture */
+  margin-bottom: 20px; /* Space between image and text */
+}
 
 /* Audio player styling */
 audio {
