@@ -141,3 +141,16 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+/* styles.css */
+.media img {
+  max-width: 100%; /* Make sure images are responsive */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.media video {
+  width: 100%; /* Make sure the video is responsive */
+  display: block;
+  margin: 0 auto;
+}
