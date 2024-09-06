@@ -61,3 +61,83 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+/* General styles for body and header */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #f4f4f4; /* Light background for header */
+  padding: 10px 0;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Dark color for better visibility */
+  padding: 10px;
+}
+nav ul li a:hover {
+  color: #007bff; /* Color change on hover */
+}
+
+/* About section styling */
+#about {
+  padding: 20px;
+  text-align: center;
+}
+.profile-pic {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  border-radius: 50%; /* Circular profile picture */
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Learn to Code 1 page styling */
+#learn-to-code-1 {
+  padding: 20px;
+  text-align: center;
+}
+.media img {
+  width: 100%; /* Responsive images */
+  max-width: 600px; /* Maximum width of images */
+  height: auto;
+  margin: 10px 0;
+}
+.media video {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Audio player styling */
+audio {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border: 2px solid #007bff; /* Blue border for audio player */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Contact section styling */
+#contact {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  background-color: #007bff; /* Blue background color for footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
