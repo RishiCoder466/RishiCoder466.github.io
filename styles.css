@@ -105,4 +105,53 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+/* Add animation effects */
+nav ul li a {
+  position: relative;
+  display: inline-block; /* Ensure it behaves like a block */
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Underline height */
+  background: #007bff; /* Color for underline */
+  transition: width 0.3s ease, left 0.3s ease; /* Animation for underline */
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Fade-in effect for sections */
+main section {
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Slide down */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* Animation for fade-in */
+}
+
+main section.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
+}
+
+/* Add a simple animation to the footer */
+footer {
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
