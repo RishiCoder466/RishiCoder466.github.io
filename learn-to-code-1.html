@@ -18,6 +18,7 @@
   </header>
   
   <main>
+    <section id="media">
       <h1>Unit 1 Concepts</h1>
       <img src="unit1/Picture1.png" alt="Concept Image 1" width="80%">
       <img src="unit1/Picture2.png" alt="Concept Image 2">
@@ -25,6 +26,7 @@
         <source src="unit1/Video1.mov" type="video/quicktime">
         Your browser does not support the video tag.
       </video>
+    </section>
     
     <section id="concepts">
       <h2>Concepts Covered</h2>
@@ -78,6 +80,15 @@
   <footer>
     <p>&copy; 2024 Rishi Arun. All rights reserved.</p>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const sections = document.querySelectorAll("main section");
+      sections.forEach(section => {
+        section.classList.add("visible");
+      });
+    });
+  </script>
+  
 </body>
 </html>
 
