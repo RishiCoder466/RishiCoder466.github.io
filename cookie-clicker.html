@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Clicker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learn-to-code-1.html">Learn to Code 1</a></li>
+        <li><a href="learn-to-code-2.html">Learn to Code 2</a></li>
+        <li><a href="intro-to-apps.html">Intro to Apps</a></li>
+        <li><a href="about-me-and-creating-your-own-story.html">All About Me and Creating Your Own Story</a></li>
+        <li><a href="rock-paper-scissors-and-battleships.html">Rock Paper Scissors and Battleships</a></li>
+        <li><a href="cookie-clicker.html">Cookie Clicker</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="media">
+      <h1>Unit 6 Concepts</h1>
+      <img src="unit6/CookieClickerPicture1.png" alt="Cookie Clicker Image" width="80%">
+      <video controls>
+        <source src="unit6/CookieClickerVideo1.mov" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    
+    <section id="concepts">
+      <h2>Concepts Covered</h2>
+      
+      <div class="concept">
+        <h3>Adding An Upgrade Button</h3>
+        <p>Upgrade buttons enhance gameplay by allowing players to spend cookies to unlock features or boost their cookie production rate. This adds a strategic element to the game.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Having the Cookie Grow/Shrink</h3>
+        <p>This concept involves changing the size of the cookie based on player interaction, making the game visually engaging. It can signal that the player has clicked on the cookie or achieved a milestone.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Having the Cookie Move Around</h3>
+        <p>By implementing movement for the cookie, you can create a dynamic challenge for the player. It encourages faster clicks and adds a playful element to the game.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>A Golden Cookie Worth Lots</h3>
+        <p>This special cookie appears randomly and provides a substantial reward when clicked. However, it disappears quickly, adding urgency and excitement to gameplay.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>A Grandma Who Makes Cookies For You Every Second</h3>
+        <p>This feature allows players to accumulate cookies passively over time. By spending 500 cookies to unlock a grandma, players can enjoy a steady income of cookies every second.</p>
+      </div>
+      
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Rishi Arun. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const sections = document.querySelectorAll("main section");
+      sections.forEach(section => {
+        section.classList.add("visible");
+      });
+    });
+  </script>
+</body>
+</html>
