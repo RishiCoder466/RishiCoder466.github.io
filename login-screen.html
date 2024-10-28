@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learn-to-code-1.html">Learn to Code 1</a></li>
+        <li><a href="learn-to-code-2.html">Learn to Code 2</a></li>
+        <li><a href="intro-to-apps.html">Intro to Apps</a></li>
+        <li><a href="about-me-and-creating-your-own-story.html">All About Me and Creating Your Own Story</a></li>
+        <li><a href="rock-paper-scissors-and-battleships.html">Rock Paper Scissors and Battleships</a></li>
+        <li><a href="cookie-clicker.html">Cookie Clicker</a></li>
+        <li><a href="login-screen.html">Login Screen</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="media">
+      <h1>Unit 7 Concepts</h1>
+      <img src="unit7/LoginPicture1.png" alt="Login Screen Concept" width="80%">
+      <video controls>
+        <source src="unit7/LoginVideo1.mov" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    
+    <section id="concepts">
+      <h2>Concepts Covered</h2>
+      
+      <div class="concept">
+        <h3>Creating a Sign In Screen</h3>
+        <p>This concept involves designing a user interface where users can enter their credentials to access the app. It includes input fields for usernames and passwords, along with visual feedback for any errors.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Creating Sign In/Sign Up Buttons</h3>
+        <p>These buttons allow users to either log in to their existing account or create a new one. The design should be intuitive and easily accessible to guide users through the authentication process.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Adding a Welcome Screen</h3>
+        <p>The welcome screen is displayed after a successful login. It provides a friendly introduction to the app and directs users to the next steps, enhancing user engagement from the start.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Adding a Sign Up Screen</h3>
+        <p>The sign-up screen collects user information to create a new account. This includes fields for email, username, and password, often accompanied by validation checks to ensure data integrity.</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Rishi Arun. All rights reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const sections = document.querySelectorAll("main section");
+      sections.forEach(section => {
+        section.classList.add("visible");
+      });
+    });
+  </script>
+</body>
+</html>
