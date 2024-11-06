@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selling App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learn-to-code-1.html">Learn to Code 1</a></li>
+        <li><a href="learn-to-code-2.html">Learn to Code 2</a></li>
+        <li><a href="intro-to-apps.html">Intro to Apps</a></li>
+        <li><a href="about-me-and-creating-your-own-story.html">All About Me and Creating Your Own Story</a></li>
+        <li><a href="rock-paper-scissors-and-battleships.html">Rock Paper Scissors and Battleships</a></li>
+        <li><a href="cookie-clicker.html">Cookie Clicker</a></li>
+        <li><a href="login-screen.html">Login Screen</a></li>
+        <li><a href="selling-app.html">Selling App</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="media">
+      <h1>Unit 8 Concepts</h1>
+      <img src="unit8/SellPicture.png" alt="Selling App Image" width="80%">
+      <video controls>
+        <source src="unit8/SellVideo.mov" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    
+    <section id="concepts">
+      <h2>Concepts Covered</h2>
+      
+      <div class="concept">
+        <h3>Adding a Description to the Product</h3>
+        <p>This concept involves allowing the user to add a description of the product they are selling. It gives more details about the product, helping customers make better purchasing decisions.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Adding Quality Textbox and Cost Textbox</h3>
+        <p>The quality and cost textboxes allow the seller to specify the quality of the product and its price. These inputs help the system define product characteristics and make the purchasing process smoother.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Adding an Add to Cart Button</h3>
+        <p>Implementing an "Add to Cart" button allows customers to add the selected product to their shopping cart. This button is an essential part of the online shopping experience.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Adding a Credit Card Number Textbox</h3>
+        <p>The credit card number textbox enables customers to securely enter their payment information, which is critical for completing an online purchase.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Adding a Submit Payment Button</h3>
+        <p>The submit payment button is used to process the payment after the customer has entered their credit card information. It triggers the backend to charge the customer's card and complete the transaction.</p>
+      </div>
+      
+      <div class="concept">
+        <h3>Creating a Payment Submitted Page</h3>
+        <p>The payment submitted page is displayed after the customer successfully submits their payment. It confirms the order and thanks the customer for their purchase.</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Rishi Arun. All rights reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const sections = document.querySelectorAll("main section");
+      sections.forEach(section => {
+        section.classList.add("visible");
+      });
+    });
+  </script>
+</body>
+</html>
